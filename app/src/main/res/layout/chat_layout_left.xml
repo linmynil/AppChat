@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#1B202D">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginStart="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/opo_msg_back"
+            android:padding="15dp"
+            android:text="This is opponent message"
+            android:textColor="@color/white"
+            android:id="@+id/myMessage"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:textColor="@color/white"
+            android:layout_margin="5dp"
+            android:id="@+id/myTime"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="05:12 PM"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1B202D"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/logo_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logoimage"/>
+    <TextView
+        android:id="@+id/logo_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello there, Welcome Back!!"
+        android:textSize="18sp"
+        android:textColor="#FFF"
+        android:fontFamily="@font/anticregular"
+        />
+
+    <TextView
+        android:id="@+id/logo_slogan"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:fontFamily="@font/bungeeregular"
+        android:text="Enter user information"
+        android:textColor="#FFF"
+        android:textSize="20sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/course"
+            app:hintTextColor="@color/white"
+            app:boxStrokeColor="@color/white"
+            android:textColorHint="@color/white"
+            app:boxStrokeWidthFocused="2dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="Full name">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fullNameInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:inputType="text"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/updateBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/button_background_green"
+        android:text="Update"
+        android:textColor="#000"
+        android:textStyle="bold"
+        app:backgroundTint="@null" />
+</LinearLayout>
